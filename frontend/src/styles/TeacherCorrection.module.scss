@@ -1,0 +1,82 @@
+.teacherCorrectionContainer {
+  .teacherCorrectionScannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    input {
+      width: 27%;
+      padding: 0.5rem;
+      border: none;
+      outline: none;
+      background-color: #f6f6f6;
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 1.2rem;
+      border-radius: 15px;
+      margin: auto;
+    }
+    .teacherCorrectionScanner {
+      width: 20rem;
+      height: 20rem;
+      border: 1px solid;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      video {
+        height: 17rem !important;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .scanBtn {
+      padding: 0.5rem;
+      background-color: #4747ff;
+      border: none;
+      outline: none;
+      width: 20rem;
+      margin: auto;
+      border-radius: 15px;
+      margin: 1rem auto;
+      cursor: pointer;
+      h3 {
+        margin: 0;
+        color: aliceblue;
+        font-weight: 100;
+      }
+    }
+  }
+  .scanNxtBtn {
+    padding: 0.5rem;
+    background-color: #4747ff;
+    border: none;
+    outline: none;
+    width: 15rem;
+    border-radius: 15px;
+    margin: 1rem auto;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 6rem;
+    gap: 1rem;
+    h3 {
+      margin: 0;
+      color: aliceblue;
+      font-weight: 100;
+    }
+  }
+}

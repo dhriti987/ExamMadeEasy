@@ -1,0 +1,36 @@
+.NavbarContainer {
+  flex-basis: 20%;
+  background-color: #161616;
+  @media screen and (max-width: 1294px) {
+    display: none;
+  }
+  .NavbarContainerHeading {
+    text-align: center;
+    color: aliceblue;
+    margin: 0;
+    padding: 1.6rem 0px;
+    border-bottom: 1px solid;
+    width: 93%;
+    margin: auto;
+    font-weight: 600;
+  }
+  .NavbarContents {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    .NavbarContent {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      padding-left: 2rem;
+      text-decoration: none;
+      p {
+        color: aliceblue;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  }
+}

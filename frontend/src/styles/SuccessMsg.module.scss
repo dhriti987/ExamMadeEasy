@@ -1,0 +1,38 @@
+.msgContainer {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #5bff5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.6rem;
+  border-radius: 10px;
+  z-index: 100;
+  transition: 0.5s all;
+  @media screen and (max-width: 754px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 385px) {
+    // flex-direction: column;
+    width: 80%;
+  }
+  h2 {
+    font-weight: bolder;
+    @media screen and (max-width: 754px) {
+      // flex-direction: column;
+      text-align: center;
+    }
+    margin: 0;
+  }
+  .successImg {
+    width: 2rem;
+    height: 2rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

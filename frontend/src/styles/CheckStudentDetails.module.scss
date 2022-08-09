@@ -1,0 +1,106 @@
+.studentDetailsContainer {
+  display: flex;
+  width: 80%;
+  gap: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 100vh;
+  @media screen and (max-width: 954px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 661px) {
+    flex-direction: column;
+  }
+  .studentDetailsFilter {
+    flex-basis: 40%;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+    height: 13rem;
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: auto;
+      border: none;
+      outline: none;
+      background-color: #f6f6f6;
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 1.2rem;
+      border-radius: 4px;
+    }
+    :global {
+      .ant-select-show-search.ant-select:not(.ant-select-customize-input)
+        .ant-select-selector {
+        padding: 8px 6px;
+      }
+      .ant-select-selector {
+        height: 47px;
+        background-color: #f6f6f6;
+        border-radius: 4px;
+      }
+      .ant-select-show-search.ant-select:not(.ant-select-customize-input)
+        .ant-select-selector
+        input {
+        padding-top: 15px;
+      }
+      .ant-select-selection-item {
+        display: flex;
+        align-items: center;
+        font-family: "Ibarra Real Nova", serif;
+        font-size: 1.2rem;
+      }
+      .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+        border: none;
+      }
+    }
+  }
+  .studentDetailsLists {
+    flex-basis: 60%;
+    padding: 1rem;
+    background-color: white;
+    height: 37rem;
+    overflow-y: scroll;
+    .studentDetailsList {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: #f6f6f6;
+      padding: 0.7rem;
+      border-radius: 7px;
+      margin: 0.7rem 0;
+      .studentImg {
+        width: 4rem;
+        height: 4rem;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.studentDetailsLists::-webkit-scrollbar {
+  width: 3px;
+}
+
+.studentDetailsLists::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.studentDetailsLists::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

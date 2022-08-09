@@ -1,0 +1,15 @@
+.layOutContainer {
+  display: flex;
+  .childContainer {
+    flex-basis: 80%;
+    background-color: #e6e6e6;
+    padding: 0 1.6rem;
+    position: relative;
+    @media screen and (max-width: 1294px) {
+      flex-basis: 100%;
+    }
+    @media screen and (max-width: 545px) {
+      padding: 0 0.7rem;
+    }
+  }
+}

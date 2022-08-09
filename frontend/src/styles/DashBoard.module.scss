@@ -1,0 +1,138 @@
+.dashBoardContainer {
+  .dashBoardHead {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 0;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    h2 {
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+  .dashBoardProfile {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    a {
+      color: black;
+      font-weight: 700;
+    }
+  }
+  .dashBoardContent {
+    display: flex;
+    gap: 0.6rem;
+    @media screen and (max-width: 988px) {
+      flex-direction: column;
+    }
+    .dashBoardProfileDetails {
+      padding: 0.6rem 0.8rem;
+      flex-basis: 50%;
+      background-color: white;
+      margin-top: 1rem;
+      height: 17rem;
+      @media screen and (max-width: 988px) {
+        width: 97%;
+        margin: auto;
+        margin-top: 1rem;
+      }
+      @media screen and (max-width: 545px) {
+        width: 100%;
+      }
+      .dashBoardProfileDetailsHead {
+        font-weight: 600;
+        margin: 0;
+      }
+      .dashBoardProfileDetailsContentContainer {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1.5rem;
+        @media screen and (max-width: 492px) {
+          flex-direction: column;
+        }
+        .dashBoardProfileDetailsImg {
+          flex-basis: 30%;
+          height: 10rem;
+          @media screen and (max-width: 492px) {
+            height: 18rem;
+            flex-basis: 0;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .dashBoardProfileDetailsContent {
+          flex-basis: 70%;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            h4 {
+              flex-basis: 50%;
+            }
+          }
+        }
+      }
+    }
+    .dashBoardFeatures {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      @media screen and (max-width: 545px) {
+        gap: 10px;
+      }
+      @media screen and (max-width: 413px) {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      .addToDashBoard {
+        flex-basis: 48%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        margin: 1rem 0;
+
+        @media screen and (max-width: 988px) {
+          flex-basis: 47.5%;
+          margin: 0.5rem 0;
+        }
+        @media screen and (max-width: 545px) {
+          flex-basis: 48.5%;
+          margin: 0;
+        }
+        h1 {
+          font-weight: 600;
+        }
+        .addToDashBoardImg {
+          width: 5rem;
+          height: 5rem;
+          margin: auto;
+          padding-top: 0.5rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .addLogo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.6rem;
+          p {
+            font-size: 1.5rem;
+            margin: 0;
+            @media screen and (max-width: 1130px) {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

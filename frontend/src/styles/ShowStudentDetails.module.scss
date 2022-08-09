@@ -1,0 +1,48 @@
+.ShowStudentDetailsContainer {
+  height: 100vh;
+  .studentDetailsContainer {
+    display: flex;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+    gap: 3rem;
+    background-color: white;
+    .studentImage {
+      width: 100%;
+      height: 10rem;
+      flex-basis: 21%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media screen and (max-width: 961px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (max-width: 681px) {
+      width: 98%;
+    }
+    .studentDetails {
+      flex-basis: 79%;
+      .studentDetail {
+        display: flex;
+        gap: 5rem;
+        .studentDetailsHeading {
+          flex-basis: 25%;
+          @media screen and (max-width: 961px) {
+            flex-basis: 50%;
+          }
+        }
+        .studentDetailsContent {
+          flex-basis: 75%;
+          font-weight: 700;
+          overflow-x: auto;
+          @media screen and (max-width: 961px) {
+            flex-basis: 50%;
+          }
+        }
+      }
+    }
+  }
+}
